@@ -1,0 +1,66 @@
+.staatliches-regular {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-fluid {
+    width: 97%;
+    }
+
+.navbar {
+    background-color: #991914;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar .nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+.botones a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid rgb(151, 151, 151);
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+}
+
+.portada {
+  background-image: url('imagenes/portadaBranding.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+
+.contenido {
+  position: absolute;
+  bottom: 80px;
+  left: 130px;
+}
