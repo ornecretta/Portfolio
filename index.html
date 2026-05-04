@@ -15,13 +15,19 @@
 
 <nav class="navbar navbar-expand-lg py-3">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">PORTFOLIO</a>
+    <a class="navbar-brand fw-bold text-white" href="#">PORTAFOLIO</a>
 
-    <div class="ms-auto">
-      <a class="nav-link d-inline mx-2 active" href="#portada">Inicio</a>
-      <a class="nav-link d-inline mx-2" href="#sobremi">Sobre mi</a>
-      <a class="nav-link d-inline mx-2" href="#proyectos">Proyectos</a>
-      <a class="nav-link d-inline mx-2" href="#contacto">Contacto</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#portada">Inicio</a>
+        <a class="nav-link" href="#sobremi">Sobre mi</a>
+        <a class="nav-link" href="#proyectos">Proyectos</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </div>
     </div>
   </div>
 </nav>
@@ -43,7 +49,7 @@
   <div class="col-left">
     <h1 class="left-title">Sobre<br>Mi.</h1>
     <p class="left-text">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation u
+      Soy estudiante de Diseño Gráfico desde 2024, con experiencia en proyectos del ámbito profesional que me han permitido desarrollar una mirada más sólida y aplicada del diseño. Mi enfoque se centra en la construcción de identidad visual y la comunicación de ideas a través de lo gráfico, combinando lo conceptual con lo estético. Además, me desempeño como tatuadora desde hace más de 4 años, lo que refuerza mi vínculo con el arte y la ilustración como parte central de mi trabajo creativo.
     </p>
   </div>
 
@@ -67,7 +73,7 @@
       
       <div class="card">
         <div class="icono">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-palette2" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6a150e" class="bi bi-palette2" viewBox="0 0 16 16">
   <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a3 3 0 0 1-2.121-.879A3 3 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0M15 15v-4H9.258l-4.015 4zM0 .5v12.495zm0 12.495V13z"/>
 </svg>
         </div>
@@ -107,9 +113,6 @@
     </div>
     <button class="flecha derecha">›</button>
   </div>
-
-</section>
-
 </section>
 
 <section id="proyectos" class="proyectos">
@@ -117,7 +120,7 @@
     
     <div class="intro">
       <h2>Mis<br>Proyectos.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam no</p>
+      <p>Acá vas a encontrar una selección de proyectos donde exploro distintas áreas del diseño, desde branding hasta UX/UI y modelado 3D. Cada uno nace de procesos de investigación y experimentación, buscando siempre transformar ideas en piezas con identidad, intención y carácter visual.</p>
     </div>
     
 <div class="cards-container">
@@ -126,7 +129,7 @@
     <img src="imagenes/branding.jpg" class="card-img-top" alt="branding">
     <div class="card-body">
       <h5 class="card-title">BRANDING</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam no</p>
+      <p>Construcción de identidades visuales que comunican la esencia de cada marca.</p>
       <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalBranding">
         Ver más → </button>
     </div>
@@ -154,11 +157,11 @@
         <p><strong>Mis trabajos:</strong></p>
         <p>Diseño de etiquetas para marca de vino</p>
         <p>Manual corporativo de la marca Netflix</p>
-        <p>Identidad de lata energizante y displays</p>
+        <p>Desarrollo de identidad visual para un bar de música alternativa</p>
       </div>
 
       <div class="modal-footer">
-         <a href="branding.html" class="btn btn-dark">
+         <a href="branding.html#seccionBranding" class="btn btn-dark">
     Ver proyectos
   </a>
         <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -171,7 +174,7 @@
     <img src="imagenes/diseñouxui.jpg" class="card-img-top" alt="diseño ux/ui">
     <div class="card-body">
       <h5 class="card-title">DISEÑO UX/UI</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam no</p>
+      <p>Diseño de experiencias digitales centradas en la usabilidad y el usuario.</p>
       <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalDiseñoUxUi">
         Ver más → </button>
     </div>
@@ -201,7 +204,7 @@
       </div>
 
       <div class="modal-footer">
-         <a href="diseñouxui.html" class="btn btn-dark">
+         <a href="branding.html#seccionDiseñoUxUi" class="btn btn-dark">
     Ver proyectos
   </a>
         <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -215,7 +218,7 @@
     <img src="imagenes/diseño3d.jpg" class="card-img-top" alt="diseño 3d">
     <div class="card-body">
       <h5 class="card-title">DISEÑO 3D</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam no</p>
+      <p>Modelado y visualización de piezas que extienden el diseño al espacio tridimensional.</p>
       <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalDiseño3D">
         Ver más → </button>
     </div>
@@ -245,7 +248,7 @@
       </div>
 
       <div class="modal-footer">
-         <a href="diseño3d.html" class="btn btn-dark">
+         <a href="branding.html#seccionDiseño3d" class="btn btn-dark">
     Ver proyectos
   </a>
         <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -316,7 +319,7 @@
 
     <div class="item">
       <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/github.svg" class="icono">
-      <a href="github.com/tuusuario">github.com/tuusuario</a>
+      <a href="https://github.com/ornecretta/Portfolio">github.com/ornecretta</a>
     </div>
 
   </div>
