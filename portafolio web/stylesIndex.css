@@ -39,6 +39,10 @@ body {
   transition: width 0.3s ease;
 }
 
+.navbar .nav-link.active {
+  color: #cabdaf;
+}
+
 .navbar .nav-link:hover::after {
   width: 100%;
 }
@@ -309,7 +313,7 @@ body {
   min-width: 200px;
   padding: 20px;
   text-align: left;
-  background: #ffffff;
+  background: #dfdbd6;
   border-radius: 30px;
   margin-bottom: 20px;
 }
@@ -318,13 +322,17 @@ body {
   width: 30px;
   height: 40px;
   margin-bottom: 10px;
+  color: #6a150e !important;
+  fill: #6a150e !important;
 }
 
 .card .icono svg {
   width: 100%;
-  height: 100%;
-  fill: #6a150e; 
+  height: 100%; 
+  color: #6a150e !important;
+  fill: #6a150e !important;
 }
+
 
 .card h3 {
   margin: 10px 0;
