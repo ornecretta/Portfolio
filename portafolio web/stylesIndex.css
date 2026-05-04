@@ -1,0 +1,711 @@
+.staatliches-regular {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+    width: 96%;
+    }
+
+.navbar {
+  background-color: #6a150e;
+  margin-bottom: 0;
+  border: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar .nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+.botones a {
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 25px;
+  border: 1px solid rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  height: auto;
+  line-height: normal;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    background-color: #6a150e;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    min-width: 10rem;
+    z-index: 2000;
+  }
+}
+
+.portada {
+  background-image: url('imagenes/portada\ web_Mesa\ de\ trabajo\ 1_Mesa\ de\ trabajo\ 1.png');
+  height: 750px;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.portada img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 1517px) and (max-width: 1600px) {
+  .portada {
+    background-size: cover;
+    background-position: top center;
+    height: 70vh;
+  }
+
+  .botones a {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 326px) {
+  .portada {
+    background-image: url("imagenes/portadawebCelular-02-02.png");
+    background-size: cover;
+    background-position: top center;
+    height: 38vh;
+  }
+
+  .botones a {
+    display: none;
+  }
+}
+
+@media (min-width: 326px) and (max-width: 400px) {
+  .portada {
+    background-image: url("imagenes/portadawebCelular-02-02.png");
+    background-size: cover;
+    background-position: top center;
+    height: 48vh;
+  }
+
+  .botones a {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+  .portada {
+    background-image: url("imagenes/portadawebCelular-02-02.png");
+    background-size: cover;
+    background-position: top center;
+    height: 57vh;
+  }
+
+  .botones a {
+    display: none;
+  }
+}
+
+.contenido {
+  position: absolute;
+  bottom: 80px;
+  left: 130px;
+}
+
+.botones {
+  display: flex;
+  gap: 30px;
+  margin-top: -100px;
+  align-items: center;
+}
+
+.sobremi {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; 
+  padding-left: 10%;   
+  padding-right: 0;    
+  padding-top: 80px;
+  padding-bottom: 70px;
+  min-height: 80vh;
+  background-color: #dfdbd6;
+}
+
+
+.col-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.left-title {
+  font-size: 11rem; 
+  line-height: 0.9;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: none;
+  padding-top: 3%;
+  color: #6a150e;
+}
+
+.left-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.col-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding-right: 100px;
+}
+
+.miimagen img {
+  max-width: 100%; 
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .sobremi {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+      "titulo imagen"
+      "texto texto";
+    
+    padding: 40px 20px; 
+    min-height: auto;
+    gap: 15px; 
+    align-items: center; 
+  }
+
+  .col-left {
+    display: contents; 
+  }
+
+  .left-title {
+    grid-area: titulo;
+    font-size: 4rem; 
+    line-height: 1;
+    margin: 0;
+    color: #6a150e;
+    text-align: left;
+  }
+
+  .col-right {
+    grid-area: imagen;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .miimagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+  }
+
+  .left-text {
+    grid-area: texto;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 100%; 
+  }
+  
+  .botones {
+    display: none;
+  }
+}
+
+.habilidades {
+  padding: 60px 0px;
+  text-align: center;
+  background-color: #6a150e;
+}
+
+.titulo {
+  font-size: 50px;
+  margin-bottom: 70px;
+  color: #ffffff;
+  padding: 20px 20px;
+  font-weight: 800;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-cards {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.card {
+  min-width: 200px;
+  padding: 20px;
+  text-align: left;
+  background: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.card .icono {
+  width: 30px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.card .icono svg {
+  width: 100%;
+  height: 100%;
+  fill: #6a150e; 
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #6a150e;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 13px;
+  color: #000000;
+}
+
+.flecha {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 40px;
+  color: #6a150e;
+  border: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: 600; 
+}
+
+.izquierda {
+  left: -55px;
+}
+
+.derecha {
+  right: -55px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .habilidades {
+    padding: 40px 35px; 
+  }
+
+  .titulo {
+    font-size: 32px; 
+    padding: 0 10px; 
+    margin-bottom: 30px; 
+    text-align: center;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .contenedor-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+  }
+
+  .card {
+    min-width: 0;
+    padding: 15px 12px; 
+    border-radius: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+  }
+
+  .card .icono {
+    width: 22px;
+    height: 28px;
+    margin: 0 auto 10px auto;
+  }
+
+  .card h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+
+  .card p {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #333; 
+  }
+
+  .flecha {
+    display: none;
+  }
+}
+
+.proyectos {
+  background: #dfdbd6;
+  padding: 80px 0;
+}
+
+.contenido-proyectos {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 110px;
+  font-weight: 800;
+  line-height: 0.8;
+  color: #6a150e;
+}
+
+.intro p {
+  max-width: 750px;
+  margin-top: 50px;
+}
+
+.cards-container {
+  width: 90%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.proyecto-card {
+  width: 25%;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+
+}
+
+.proyecto-card:hover {
+  transform: scale(1.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background: #bbb; 
+}
+
+.card-body {
+  padding: 10px 0 0 0; 
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .proyectos {
+    padding: 40px 0;
+  }
+
+  .contenido-proyectos {
+    width: 85%; 
+  }
+
+  .intro h2 {
+    font-size: 40px; 
+    line-height: 1;
+    text-align: left;
+  }
+
+  .intro p {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .cards-container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .proyecto-card {
+    width: 100%;
+    max-width: 100%; 
+  }
+
+  .modal-dialog {
+    max-width: 90% !important; 
+    margin: 10px auto;
+  }
+
+  .modal-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .modal-body {
+    font-size: 14px;
+    padding: 15px;
+    line-height: 1.5;
+  }
+
+  .modal-footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .modal-footer .btn {
+    width: 100%; 
+    margin: 0 !important;
+  }
+}
+
+.contacto {
+  background: #410c07;
+  padding: 80px 0px;
+}
+
+.contacto .container {
+  padding-left: 0;
+  max-width: 80%;
+}
+
+.contacto form {
+  width: 70%;      
+  margin-top: 150px;
+  margin-left: auto;
+  color: white;
+}
+
+.contactame {
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 0.9;
+  margin-left: -40px;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #88a68a;
+  border: none;
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.contacto-info {
+  margin-top: 60px;
+  color: white;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.icono {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.texto {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.item a {
+  color: rgb(255, 255, 255);              
+  font-weight: bold;       
+  font-size: 25px;         
+  text-decoration: underline; 
+}
+
+.chico {
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 5px;
+  opacity: 0.7;
+}
+
+.info-der {
+  text-align: right;
+}
+
+.info-der .item {
+  justify-content: flex-end;
+}
+
+.contacto .col-md-6 {
+  padding-left: 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contacto {
+    background: #410c07;
+    padding: 40px 15px;
+  }
+
+  .contacto .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .contactame {
+    font-size: 38px; 
+    line-height: 1;
+    margin-left: 3rem; 
+    margin-bottom: 25px;
+    text-align: left; 
+  }
+
+  .contacto form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contacto form label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .contacto form input, 
+  .contacto form textarea {
+    font-size: 14px; 
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .contacto-info {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .contacto-info .col-md-6 {
+    width: 100%; 
+    padding: 0;
+  }
+
+  .item {
+    justify-content: left;
+    gap: 8px;
+    margin-bottom: 12px;
+    margin-left: 3rem;
+  }
+
+  .icono {
+    width: 16px; 
+    height: 16px;
+  }
+
+  .texto, .item a {
+    font-size: 13px; 
+  }
+
+  .info-der {
+    text-align: left;
+  }
+
+  .info-der .item {
+    justify-content: left;
+  }
+
+  .chico {
+    font-size: 11px;
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+
